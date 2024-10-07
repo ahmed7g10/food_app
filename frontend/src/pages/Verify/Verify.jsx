@@ -2,7 +2,7 @@ import axios from 'axios';
 import './verify.css'
 import {useNavigate, useSearchParams} from 'react-router-dom'
 import { useEffect } from 'react';
-import { API_URL } from '../../utils/API_URL.js';
+import { API_URL } from '../../my_env/the_urls.js';
 const Verify = () => {
     const [search,setSearch]=useSearchParams();
     const success=search.get('success');

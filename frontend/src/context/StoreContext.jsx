@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
-import { API_URL } from "/utils/API_URL.js";
+import { API_URL } from "../my_env/the_urls";
 export const StoreContext=createContext(null)
 const StoreContextProvider=(props)=>{
     const [cartItems,setCartItems]=useState({})

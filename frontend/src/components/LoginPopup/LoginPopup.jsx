@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { StoreContext } from '../../context/StoreContext';
-import { API_URL } from '../../utils/API_URL.js';
+import { API_URL } from '../../my_env/the_urls.js';
 const LoginPopup = ({setShowLogin}) => {
     const [currentState,setCurrentState] =useState("Sign Up");
     const {setToken}=useContext(StoreContext)

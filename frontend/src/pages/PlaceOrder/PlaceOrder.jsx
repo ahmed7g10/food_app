@@ -4,7 +4,7 @@ import { StoreContext } from '../../context/StoreContext'
 import axios from "axios"
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
-import { API_URL } from '../../utils/API_URL.js';
+import { API_URL } from '../../my_env/the_urls';
 const PlaceOrder = () => {
   const {getTotalCartAmount,Token,food_list,cartItems}=useContext(StoreContext);
   const nav=useNavigate();
