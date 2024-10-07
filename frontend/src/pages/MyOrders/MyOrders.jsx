@@ -4,7 +4,7 @@ import { StoreContext } from '../../context/StoreContext'
 import axios from 'axios';
 import { assets } from '../../assets/front/assets';
 import { useNavigate } from 'react-router-dom';
-import { API_URL } from '../../../utils/API_URL.JS';
+import { API_URL } from '../../utils/API_URL.js';
 const MyOrders = () => {
     const [data,setdata] =useState([])
     const {Token}=useContext(StoreContext);
