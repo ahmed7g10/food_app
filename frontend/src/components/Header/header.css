@@ -1,0 +1,64 @@
+.header{
+    background: url(../../../public/header_img.png) no-repeat;
+    background-size: contain;
+    margin: 30px auto;
+    position: relative;
+    height: 34vw;
+}
+.header-content{
+    position: absolute;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    max-width: 50%;
+    left: 6vw;
+    bottom: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.header-content h2{
+    font-size: max(4.5vw,22px);
+    color: white;
+    font-weight: 500;
+}
+.header-content p{
+    font-size: 1vw;
+    color: white;
+}
+.header-content button{
+    border: none;
+    color:#747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,33px);
+    border-radius: 50px;
+}
+.header-content{
+    animation: fadin 3s ;
+}
+@keyframes fadin{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@media screen and (max-width:1050px) {
+    .header{
+        height: 38vw;
+    }
+    .header-content{
+        max-width: 45%;
+    }
+}
+@media screen and (max-width:750px) {
+   
+    .header-content{
+        max-width: 65%;
+
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content button{
+        padding: 2vw 4vw;
+    }
+}

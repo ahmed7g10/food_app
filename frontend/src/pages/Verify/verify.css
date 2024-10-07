@@ -1,0 +1,18 @@
+.verify{
+    min-height: 60vh;display: grid;
+
+}
+.spiner{
+    width: 100px;
+    place-self: center;
+    border:5px solid #bdbdbd;
+    height: 100px;
+    border-top-color: tomato;
+    border-radius: 50% ;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
