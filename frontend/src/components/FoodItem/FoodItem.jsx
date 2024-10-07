@@ -2,13 +2,15 @@ import React, { useContext, useState } from 'react'
 import './fooditem.css'
 import { assets } from '../../assets/front/assets'
 import { StoreContext } from '../../context/StoreContext';
+import { IMAGES_PATH } from '../../my_env/the_urls';
 const FoodItem = ({food}) => {
     const {cartItems,addToCart,removeFromCart}=useContext(StoreContext);
     
   return (
     <div className='food-item'>
         <div className="food-item-img-container">
-            <img className='food-item-image' src={`http://localhost:4000/images/${food?.image}`} alt={food?.name} />
+            {console.log(`${IMAGES_PATH}images/${food?.image}`)}
+            <img className='food-item-image' src={`${IMAGES_PATH}uploads/${food?.image}`} alt={food?.name} />
             {
                  !cartItems[food?._id] ?
                 (<div className='food-item-counter'>
