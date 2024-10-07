@@ -27,7 +27,9 @@ app.use('/api/cart',cartRouter)
 app.use('/api/order',orderRouter)
 // app.use('/images',express.static("uploads"))
 const __dirname = path.resolve();
-app.use('/images', express.static(path.join(__dirname, 'uploads')));
+//app.use('/images', express.static(path.join(__dirname, './uploads')));
+app.use('/uploads', express.static(path.join(__dirname, './backend/uploads')));
+
 // app.get('/', (req, res) => {
 //     res.send("Welcome to food")
 // })
